@@ -1,7 +1,7 @@
 ## Socalize and Network
 
 ### Overview
-
+Socialize and Network is a great backend application. It can handle large amounts of unstructured data with that being said it uses the NoSql database. This is a great application that is not just easy to use but structured beautifully for the users to add or change anything they wish within the code. Anyone who is starting a startup and want a great social media application, this is for you. Add reactions, add friends, add your own thoughts and create your own user! Socialize and Network does everything user's can think off!
 
 ### Table Of Contents
 - [Installation](#installation)
