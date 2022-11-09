@@ -1,7 +1,7 @@
 const { Thought, User } = require('../models')
 
 const thoughtController = {
-  // get all Thoughts
+  // get all thoughts
   async getAllThought (req, res) {
     try {
       let dbThoughtData = await Thought.find({})
@@ -18,7 +18,7 @@ const thoughtController = {
     }
   },
 
-  // get one Thought by id
+  // get one thought by id
   async getThoughtById ({ params }, res) {
     try {
       let dbThoughtData = await Thought.findOne({ _id: params.id })
@@ -39,7 +39,7 @@ const thoughtController = {
     }
   },
 
-  // create Thought
+  // create a new thought
   async createThought ({ body }, res) {
     try {
       let _id = await Thought.create(body)
@@ -54,7 +54,7 @@ const thoughtController = {
     }
   },
 
-  // update Thought by id
+  // update thought by id
   async updateThought ({ params, body }, res) {
     try {
       let dbThoughtData = await Thought.findOneAndUpdate(
@@ -76,7 +76,7 @@ const thoughtController = {
     }
   },
 
-  // delete Thought
+  // delete thought
   async deleteThought ({ params }, res) {
     try {
       let dbThoughtData = await Thought.findOneAndDelete({ _id: params.id })
@@ -96,7 +96,7 @@ const thoughtController = {
     }
   },
 
-  // add reaction
+  // add reaction to thoughts
   async addReaction ({ params, body }, res) {
     try {
       let dbThoughtData = await Thought.findOneAndUpdate(
